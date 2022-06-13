@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    visibility: visible;
+    
+}
+
+.ingredientes {
+    display: flex;
+    justify-content: center; 
+    margin: 10px;
+    font-size: 23px;
+    color: rgb(10, 10, 10);
+    text-shadow:  4px 2px 2px rgb(231, 217, 217); 
+    font-weight: bold;
+}
+
+body {
+    /* background: linear-gradient(100deg, rgb(63, 196, 63), white,rgb(240, 121, 121));
+    background-repeat: no-repeat;
+    background-attachment: fixed ; */
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;    
+    padding-top: 5%;
+    color: beige;
+    text-shadow: 1px 2px 15px black;
+    font-size: 40px;
+    margin-bottom: 2.5%;
+}
+
+ul {
+    font-size: 23px;
+    margin-left: 60px;
+    color: rgb(10, 10, 10);
+    text-shadow:  4px 2px 2px rgb(231, 217, 217); 
+    font-weight: bold;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: center;    
+    padding-top: 2.5%;
+    text-shadow: 4px 2px 2px rgb(231, 217, 217);
+    color: rgb(245, 64, 58);
+    font-size: 40px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;    
+    padding-top: 2%;
+    text-shadow:4px 2px 2px rgb(226, 214, 214);
+    color: rgb(245, 64, 58);
+    font-size: 30px;
+}
+
+
+.Formulario {
+    display: flex;
+    justify-content: center;    
+    padding-top: 2%;
+    text-shadow: 3px 4px 9px black;
+    font-size: 25px;
+}
+
+.imagen {
+    
+}
