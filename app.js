@@ -56,7 +56,7 @@ formulario.addEventListener("submit", (e) => {
 
 
 const buscadorPizzas = (resultado) => {
-  pizzas.map(pizza => {
+  strPizzasLocal.map(pizza => {
     const h2 = document.querySelector("#card > h2")
     const h4 = document.querySelector("#card > h4")
     const img = document.querySelector("#card > img")
@@ -80,3 +80,6 @@ const buscadorPizzas = (resultado) => {
 
 const strPizzas = JSON.stringify(pizzas)
 localStorage.setItem('pizzas', strPizzas )
+
+const pizzasLocal = localStorage.getItem('pizzas')
+const strPizzasLocal = JSON.parse(pizzasLocal)
