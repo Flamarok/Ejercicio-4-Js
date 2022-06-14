@@ -63,8 +63,8 @@ const buscadorPizzas = (resultado) => {
     const parrafo = document.querySelector("#card > p")
     
     if (resultado == pizza.id)  {
-      h2.textContent = `Nombre:${pizza.name} `
-      h4.textContent = `Precio:${pizza.precio}`
+      h2.textContent = `Nombre: ${pizza.name} `
+      h4.textContent = `Precio: ${pizza.precio}`
       img.src = `${pizza.url}`
       parrafo.textContent = `Ingredientes: ${pizza.ingredientes}`
     } else {if (resultado < 0 || resultado > pizzas.length - 1 ) {
