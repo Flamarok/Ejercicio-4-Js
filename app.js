@@ -63,18 +63,20 @@ const buscadorPizzas = (resultado) => {
     const parrafo = document.querySelector("#card > p")
     
     if (resultado == pizza.id)  {
-      h2.textContent = `Nombre: ${pizza.name} `
+      h2.textContent = `Nombre:${pizza.name} `
       h4.textContent = `Precio:${pizza.precio}`
       img.src = `${pizza.url}`
-      parrafo.textContent = `Ingredientes:${pizza.ingredientes}`
+      parrafo.textContent = `Ingredientes: ${pizza.ingredientes}`
     } else {if (resultado < 0 || resultado > pizzas.length - 1 ) {
       h2.textContent = "Esta pizza no existe"
       h4.textContent = "-"
-      img.src = ` `
+      img.src = "./assets/pagina-error-404-distorsion_23-2148105404.jpg"
       parrafo.textContent = `-`
-    }
+    } 
     }
   })
   
 }; 
 
+const strPizzas = JSON.stringify(pizzas)
+localStorage.setItem('pizzas', strPizzas )
